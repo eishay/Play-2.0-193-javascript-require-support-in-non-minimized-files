@@ -8,8 +8,11 @@ The following commands are fetching the test.js javascript file from https://git
 The first call is fetching test.js, the second is fetching test.min.js
 While in test.min.js closure compiled require("lib") into its modules system, it did not do so with test.js.
 
-```javascript
+### Not Minified
+```bash
 $ curl http://localhost:9000/assets/javascript/test.js;echo;
+```
+```javascript
 // The test
 
 require("lib");
@@ -20,8 +23,11 @@ function showSum(first, second) {
 
 showSum([2,3], 4);
 ```
-```javascript
+### Minified
+```bash
 $ curl http://localhost:9000/assets/javascript/test.min.js;echo;
+```
+```javascript
 var module$lib={};function sum$$module$lib(a,b){return a+b}module$lib.sum=sum$$module$lib;if(module$lib.module$exports)module$lib=module$lib.module$exports;var module$test={};module$lib;function showSum$$module$test(first,second){alert(module$lib.sum(first,second))}showSum$$module$test([2,3],4);if(module$test.module$exports)module$test=module$test.module$exports;
 ```
 
