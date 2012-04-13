@@ -1,0 +1,4 @@
+Demonstrating the issue described at https://play.lighthouseapp.com/projects/82401/tickets/193-javascript-require-support-in-non-minimized-files "javascript require support in non-minimized files".
+The demo runs on Play 2.1-SNAPSHOT 21ba2e879b7912b44f1edf5f9e2ab6cf9fe5e4cb from https://github.com/playframework/Play20.git
+
+
