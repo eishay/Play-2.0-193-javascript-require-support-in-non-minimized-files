@@ -4,7 +4,7 @@ The demo runs on Play 2.1-SNAPSHOT 21ba2e879b7912b44f1edf5f9e2ab6cf9fe5e4cb from
 The functionality demoed is described at http://www.playframework.org/documentation/2.0/AssetsGoogleClosureCompiler "CommonJS-style dependencies" 
 
 url http://localhost:9000/assets/javascript/test.js;echo;
-''' javascript
+``` javascript
 // The test
 
 require("lib");
@@ -14,8 +14,8 @@ function showSum(first, second) {
 }
 
 showSum([2,3], 4);
-'''
+```
 eishay-mbp:requireDemo eishay$ curl http://localhost:9000/assets/javascript/test.min.js;echo;
-''' javascript
+``` javascript
 var module$lib={};function sum$$module$lib(a,b){return a+b}module$lib.sum=sum$$module$lib;if(module$lib.module$exports)module$lib=module$lib.module$exports;var module$test={};module$lib;function showSum$$module$test(first,second){alert(module$lib.sum(first,second))}showSum$$module$test([2,3],4);if(module$test.module$exports)module$test=module$test.module$exports;
-'''
+```
